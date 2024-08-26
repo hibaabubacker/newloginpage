@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 3px rgba(0, 123, 255, 0.2);
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        span {
+            display: block;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+
+    <form id="form">
+        <div>
+            <div>
+                <h1>login form</h1>
+            </div>
+            <div>
+                <label for="username">username:</label>
+                <input type="text" id="username" name="username"><br>
+                <span style='color:red' id="username_error"></span>
+                <br><br>
+            </div>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email"><br>
+                <span style='color:red' id="email_error"></span>
+
+                <br><br>
+            </div>
+            <div>
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password"><br>
+                <span style='color:red' id="password_error"></span>
+
+                <br><br>
+            </div>
+            <div>
+                <label for="cofirmPassword">confirm password:</label>
+                <input type="password" id="confirmPassword" name="confirmpassword"><br>
+                <span style='color:red' id="confirmPassword_error"></span>
+                <br><br>
+            </div>
+            <div>
+                <label for="phoneNumber">phone number:</label>
+                <input type="number" id="phoneNumber" name="phonenumber"><br>
+                <span style='color:red' id="phoneNumber_error"></span>
+
+                <br><br>
+            </div>
+            <div>
+                <button>submit</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+<script src="form.js"></script>
+
+</html>
